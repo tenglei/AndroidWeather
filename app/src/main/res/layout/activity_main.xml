@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.weather.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15">
+
+
+    </FrameLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:id="@+id/show__calendar"
+            android:background="@drawable/calendar"
+            android:layout_alignParentRight="true"/>
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:id="@+id/show__weather"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bd0"
+            android:layout_alignParentLeft="true"/>
+        <!--<ImageButton-->
+            <!--android:layout_width="30dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:id="@+id/show_outplan"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:background="@drawable/note"/>-->
+
+    </RelativeLayout>
+
+
+</LinearLayout>
